@@ -17,13 +17,16 @@ ul{
 }
 .container{
     width: 1158px;
-    
+    justify-content: center;
+
 }
 body {
     font-family: Roboto, sans-serif;
     color: #434455;
 }
-
+.menu-line{
+    display: flex;
+}
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 800;
@@ -57,8 +60,32 @@ body {
 .logo-color-stud{
     color: #2e2f42;
 }
+.sait-menu {
+    display: flex;
+    margin-left: 76px;
+}
+.sait-menu .item + .item {
+    margin-left: 40px;
+}
+/*--.sait-menu .link{
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}--*/
+.sait-cont{
+    display: flex;
+}
+.sait-cont .item + .item {
+    margin-left: 66px;
+}
+.allmenu{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 .caption {
-    background-color:#2e2f42;}
+    background-color:#2e2f42;
+    margin-bottom: 92px;
+}
 .caption-lable {
     font-size: 56px;
     line-height: 1.07;
@@ -81,7 +108,7 @@ body {
 .captio-but:focus{
     color: #404BBF;
 }
-
+/*--------------------------SECTION-2----------------------*/
 .list-skills{
     font-weight: 500;
     font-size: 20px;
@@ -102,6 +129,19 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
+.skills-line{
+    display: flex;
+}
+.skills-line .item + .item{
+    margin-left: 24px;
+}
+.imeg-line{
+    display: flex;
+}
+.imeg-line .item + .item{
+    margin-left: 24px;
+}
+/*--------------------------SECTION-4----------------------*/
 .list-do-h{
     font-size: 36px;
     line-height: 1.11;
@@ -109,7 +149,18 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 74px;
 }
+.list-do{
+    margin-bottom: 120px;
+}
+.photo-line{
+    display: flex;
+}
+.photo-line .item + .item{
+    margin-left: 24px;
+}
+
 .caption-end{
     background-color: #F4F4FD;
 }
@@ -125,6 +176,7 @@ body {
     list-style:none;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 117px;
     
 }
 .logo-color-end{
@@ -134,8 +186,9 @@ body {
 .contacts{
     font-style: normal;
     list-style: none;
+    margin-left: 332px;
 }
- 
+ /*-------------------DUTTON-------------------  */
 .titls-button{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -154,4 +207,10 @@ body {
 .titls-button:focus{
     color: #FFFFFF;
     background-color: #404BBF;
+}
+.button-line{
+    display: flex;
+}
+.button-line .btn + .btn{
+    margin-left: 24px;
 }
