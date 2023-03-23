@@ -15,14 +15,22 @@ ul{
     margin: 0;
     padding-left: 0;
 }
+
 .container{
-    width: 1158px;
-    justify-content: center;
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto; 
 
 }
 body {
     font-family: Roboto, sans-serif;
     color: #434455;
+}
+.allmenu {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 .menu-line{
     display: flex;
@@ -62,29 +70,24 @@ body {
 }
 .sait-menu {
     display: flex;
-    margin-left: 76px;
+    margin-left: 64px;
+  
 }
-.sait-menu .item + .item {
-    margin-left: 40px;
+.sait-menu {
+    gap: 40px;
+    
 }
-/*--.sait-menu .link{
-    display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
-}--*/
 .sait-cont{
     display: flex;
+    margin-left: auto;
+    gap: 64px;
 }
-.sait-cont .item + .item {
-    margin-left: 66px;
-}
-.allmenu{
-    margin-top: 24px;
-    margin-bottom: 24px;
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .caption {
     background-color:#2e2f42;
-    margin-bottom: 92px;
 }
 .caption-lable {
     font-size: 56px;
@@ -92,7 +95,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-}.captio-but{
+    margin-bottom: 48px;
+}.caption-but{
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -101,11 +105,14 @@ body {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    margin: auto;
+    display: block;
+    padding: 16px 32px 16px 32px;
 }
-.captio-but:hover{
+.caption-but:hover{
     color: #404BBF;
 }
-.captio-but:focus{
+.caption-but:focus{
     color: #404BBF;
 }
 /*--------------------------SECTION-2----------------------*/
@@ -122,25 +129,34 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    
 }
 .list-skills-p{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #434455;   
+}
+.list-name {
+    text-align: center;
 }
 .skills-line{
     display: flex;
-}
-.skills-line .item + .item{
-    margin-left: 24px;
+    gap: 24px;
 }
 .imeg-line{
     display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 }
-.imeg-line .item + .item{
-    margin-left: 24px;
+.picture-g{
+    width: calc((100% - 48px) / 3);
+    border-bottom: 1px solid #E7E9FC;
 }
+
 /*--------------------------SECTION-4----------------------*/
 .list-do-h{
     font-size: 36px;
@@ -149,16 +165,16 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 74px;
-}
-.list-do{
-    margin-bottom: 120px;
+    margin-bottom: 72px;?
 }
 .photo-line{
     display: flex;
+    gap: 24px;
 }
-.photo-line .item + .item{
-    margin-left: 24px;
+.box-text{
+    border-width: 1px;
+    border-color: #E7E9FC;
+    border-style: solid;
 }
 
 .caption-end{
@@ -166,6 +182,7 @@ body {
 }
 .caption-end-l{
     background-color: #FFFFFF;
+    width: calc((100% - 72) / 4);
 
 }
 .end{
@@ -175,9 +192,7 @@ body {
     font-style:normal;
     list-style:none;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-bottom: 117px;
-    
+    letter-spacing: 0.02em;  
 }
 .logo-color-end{
     color: #f4f4fd;
@@ -186,7 +201,7 @@ body {
 .contacts{
     font-style: normal;
     list-style: none;
-    margin-left: 332px;
+    margin-left: 290px;
 }
  /*-------------------DUTTON-------------------  */
 .titls-button{
@@ -198,6 +213,7 @@ body {
     color: #4d5ae5;
     background-color: #F4F4FD;
     cursor: pointer;
+    padding: 12px 24px 12px 24px;
 
 }
 .titls-button:hover{
@@ -210,7 +226,7 @@ body {
 }
 .button-line{
     display: flex;
-}
-.button-line .btn + .btn{
-    margin-left: 24px;
+    justify-content: center;
+    gap: 24px; 
+    margin-bottom: 72px;
 }
