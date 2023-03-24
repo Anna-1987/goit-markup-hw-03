@@ -15,22 +15,25 @@ ul{
     margin: 0;
     padding-left: 0;
 }
-
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container{
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1158px;
     margin: 0 auto; 
-
 }
 body {
     font-family: Roboto, sans-serif;
     color: #434455;
 }
+
 .allmenu {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
+    margin-bottom: 16px;
 }
 .menu-line{
     display: flex;
@@ -83,8 +86,10 @@ body {
     gap: 64px;
 }
 .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 156px 120px 156px;
+}
+.section-hero{
+    padding: 188px 472px 292px 472px;
 }
 .caption {
     background-color:#2e2f42;
@@ -108,21 +113,24 @@ body {
     margin: auto;
     display: block;
     padding: 16px 32px 16px 32px;
+    border: #4D5AE5;
+    border-radius: 4px;
 }
 .caption-but:hover{
-    color: #404BBF;
+    background-color:  #404BBF;
 }
 .caption-but:focus{
-    color: #404BBF;
+    background-color: #404BBF;
 }
+
 /*--------------------------SECTION-2----------------------*/
-.list-skills{
+/* .list-skills{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
+} */
 .list-skills-h{
     font-weight: 500;
     font-size: 20px;
@@ -134,10 +142,12 @@ body {
     
 }
 .list-skills-p{
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;   
+    color: #434455; 
+    padding-bottom: 32px;  
 }
 .list-name {
     text-align: center;
@@ -148,13 +158,20 @@ body {
 }
 .imeg-line{
     display: flex;
-    gap: 24px;
     flex-wrap: wrap;
     gap: 48px 24px;
 }
 .picture-g{
     width: calc((100% - 48px) / 3);
+}
+.picture{
+    width: calc((100% - 48px) / 3);
+    border-left: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    padding: 32px 0px 32px 16px;
+    width: 100%;
+    height: auto;
 }
 
 /*--------------------------SECTION-4----------------------*/
@@ -165,7 +182,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 72px;?
+    margin-bottom: 72px;
 }
 .photo-line{
     display: flex;
@@ -187,15 +204,15 @@ body {
 }
 .end{
     background-color:#2e2f42;
+    padding: 100px 1020px 100px 156px;
 }
 .list{
-    font-style:normal;
     list-style:none;
-    line-height: 1.5;
-    letter-spacing: 0.02em;  
 }
 .logo-color-end{
     color: #f4f4fd;
+    width: 264px;
+    margin-top: 16px;
 }
 
 .contacts{
@@ -214,6 +231,8 @@ body {
     background-color: #F4F4FD;
     cursor: pointer;
     padding: 12px 24px 12px 24px;
+    border: 1px Solid #E7E9FC;
+    border-radius: 4px;
 
 }
 .titls-button:hover{
