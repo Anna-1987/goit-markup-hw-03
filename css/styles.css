@@ -18,7 +18,6 @@ ul{
 img{
     display: block;
     max-width: 100%;
-    height: auto;
 }
 .container{
     max-width: 1158px;
@@ -26,15 +25,24 @@ img{
     padding-right: 15px;
     margin: 0 auto; 
 }
+:root{
+    --accent-color:  #434455;
+    --iris-color: #4d5ae5;
+    --navyblue-color:  #2e2f42;
+    --click-color: #404bbf;
+    --cornflower-color: #E7E9FC;
+    --white-color: #FFFFFF;
+    --cloud-color: #F4F4FD;
+}
 body {
     font-family: Roboto, sans-serif;
-    color: #434455;
+    color: var(--accent-color);
 }
 
 .allmenu {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--cornflower-color);
 }
 .menu-line{
     display: flex;
@@ -45,32 +53,32 @@ body {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #4d5ae5;
+    color: var(--iris-color);
     text-transform: uppercase; 
 }
 .email{
-    color: #434455;
+    color: var(--accent-color);
 }
 .email:hover{
-    color: #404bbf;
+    color: var(--click-color);
 }
 .email:focus{
-    color: #404bbf;
+    color: var(--click-color);
 }
 .menu {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--navyblue-color);
 }
 .menu:hover{
-    color: #404bbf;
+    color: var(--click-color);
 }
 .menu:focus{
-    color: #404bbf; 
+    color: var(--click-color); 
 }
 .logo-color-stud{
-    color: #2e2f42;
+    color: var(--navyblue-color);
 }
 .sait-menu {
     display: flex;
@@ -84,64 +92,83 @@ body {
 .sait-cont{
     display: flex;
     margin-left: auto;
-    gap: 64px;
+    gap: 66px;
 }
-.section{
-    padding: 60px 0px 60px 0px;
+.section-hero{
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+.section-one{
+    padding-top: 92px; 
+    padding-bottom: 120px;
+}
+.section-two{
+    padding-bottom: 120px;
+}
+.section-three{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .section-portfolio{
     padding: 96px 0px 120px 0px;
 }
-.section-hero{
-    padding: 188px 0px 292px 0px;
-}
 .caption {
-    background-color:#2e2f42;
+    background-color:var(--navyblue-color);
 }
 .caption-lable {
     font-size: 56px;
     line-height: 1.07;
     width: 496px;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    padding-bottom: 48px;
+    color: var(--white-color);
     margin: auto;
+    text-align: center;
+    margin-bottom: 48px;
 }.caption-but{
-    background-color: #4D5AE5;
+    background-color: var(--iris-color);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: var(--white-color);
     cursor: pointer;
     margin: auto;
     display: block;
     padding: 16px 32px 16px 32px;
-    border: #4D5AE5;
+    border: var(--iris-color);
     border-radius: 4px;
 }
 .caption-but:hover{
-    background-color:  #404BBF;
+    background-color:  var(--click-color);
 }
 .caption-but:focus{
-    background-color: #404BBF;
+    background-color: var(--click-color);
 }
 
-/*--------------------------SECTION-2----------------------*/
-/* .list-skills{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-} */
+/*--------------------------SECTION-1----------------------*/
+.visualle-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+   
+} 
+.skills-item{
+    flex-basis: calc((100%-3*24)/4);
+}
 .list-skills-h{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--navyblue-color);
     margin-bottom: 8px;
     
 }
@@ -150,7 +177,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455; 
+    color: var(--accent-color); 
 }
 .list-name {
     text-align: center;
@@ -165,27 +192,23 @@ body {
     gap: 48px 24px;
 }
 .picture-g{
-    height: 300px;
     width: calc((100% - 48px) / 3);
 }
 .picture{
-    width: calc((100% - 48px) / 3);
-    border-left: 1px solid #E7E9FC;
-    border-bottom: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
+    border-left: 1px solid var(--cornflower-color);
+    border-bottom: 1px solid var(--cornflower-color);
+    border-right: 1px solid var(--cornflower-color);
     padding: 32px 0px 32px 16px;
-    width: 100%;
-    height: auto;
 }
 
-/*--------------------------SECTION-4----------------------*/
+/*--------------------------SECTION-3----------------------*/
 .list-do-h{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2e2f42;
+    color: var(--navyblue-color);
     margin-bottom: 72px;
 }
 .photo-line{
@@ -194,7 +217,7 @@ body {
 }
 .box-text{
     border-width: 1px;
-    border-color: #E7E9FC;
+    border-color: var(--cornflower-color);
     border-style: solid;
 }
 .photo-text{
@@ -202,16 +225,19 @@ body {
 }
 
 .caption-end{
-    background-color: #F4F4FD;
+    background-color: var(--cloud-color);
 }
 .caption-end-l{
-    background-color: #FFFFFF;
-    width: calc((100% - 72) / 4);
+    background-color: var(--white-color);
+    width: calc((100% - 72px) / 4);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 
 }
 .end{
-    background-color:#2e2f42;
-    padding: 100px 1020px 100px 156px;
+    background-color:var(--navyblue-color);
+    padding-top: 100px;
+    padding-bottom: 100px 
 }
 .list{
     list-style:none;
@@ -220,7 +246,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
+    color: var(--cloud-color);
     width: 264px;
     margin-top: 16px;
 }
@@ -237,21 +263,21 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4d5ae5;
-    background-color: #F4F4FD;
+    color: var(--iris-color);
+    background-color: var(--cloud-color);
     cursor: pointer;
     padding: 12px 24px 12px 24px;
-    border: 1px Solid #E7E9FC;
+    border: 1px Solid var(--cornflower-color);
     border-radius: 4px;
 
 }
 .titls-button:hover{
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--white-color);
+    background-color: var(--click-color);
 }
 .titls-button:focus{
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--white-color);
+    background-color: var(--click-color);
 }
 .button-line{
     display: flex;
