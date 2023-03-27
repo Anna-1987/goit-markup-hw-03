@@ -18,6 +18,7 @@ ul{
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 .container{
     max-width: 1158px;
@@ -92,14 +93,14 @@ body {
 .sait-cont{
     display: flex;
     margin-left: auto;
-    gap: 66px;
+    gap: 40px;
 }
 .section-hero{
     padding-top: 188px;
     padding-bottom: 188px;
 }
 .section-one{
-    padding-top: 92px; 
+    padding-top: 120px; 
     padding-bottom: 120px;
 }
 .section-two{
@@ -198,7 +199,7 @@ body {
     border-left: 1px solid var(--cornflower-color);
     border-bottom: 1px solid var(--cornflower-color);
     border-right: 1px solid var(--cornflower-color);
-    padding: 32px 0px 32px 16px;
+    padding: 32px 16px 32px 16px;
 }
 
 /*--------------------------SECTION-3----------------------*/
@@ -230,8 +231,7 @@ body {
 .caption-end-l{
     background-color: var(--white-color);
     width: calc((100% - 72px) / 4);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
 
 }
 .end{
